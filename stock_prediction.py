@@ -1,4 +1,7 @@
+
 import streamlit as st
+st.set_option('deprecation.showfileUploaderEncoding', False)  # Disable a deprecated warning
+st.set_option('deprecation.showPyplotGlobalUse', False) 
 
 
 import matplotlib.pyplot as plt
@@ -7,16 +10,13 @@ import numpy as np
 
 
 # Import the libraries
-import math
-from pandas_datareader import data as web
-import numpy as np
+
+
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
+
+
 plt.style.use('fivethirtyeight')
-import os
-from keras.callbacks import EarlyStopping
-from keras.models import Sequential, load_model
+from keras.models import  load_model
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -219,3 +219,4 @@ else:
         st.dataframe(data_frame_pred)
     else:
         pass
+
