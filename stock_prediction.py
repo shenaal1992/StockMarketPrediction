@@ -1,17 +1,7 @@
-
+# Import the libraries
 import streamlit as st
-st.set_option('deprecation.showfileUploaderEncoding', False)  # Disable a deprecated warning
-st.set_option('deprecation.showPyplotGlobalUse', False) 
-
-
 import matplotlib.pyplot as plt
 import numpy as np
-
-
-
-# Import the libraries
-
-
 import pandas as pd
 
 
@@ -78,10 +68,10 @@ amazon_scaler = scaler_amazon()
   
 
 # Load the trained models
-google_model = load_model("C:/Users/Shenal Harshana/.spyder-py3/autosave/gru_google_model.h5")
-apple_model  = load_model('C:/Users/Shenal Harshana/.spyder-py3/autosave/gru_apple_model.h5')
-microsoft_model = load_model('C:/Users/Shenal Harshana/.spyder-py3/autosave/lstm_microsoft_model.h5')
-amazon_model = load_model('C:/Users/Shenal Harshana/.spyder-py3/autosave/gru_amazon_model.h5')
+google_model = load_model("gru_google_model.h5")
+apple_model  = load_model('gru_apple_model.h5')
+microsoft_model = load_model('lstm_microsoft_model.h5')
+amazon_model = load_model('gru_amazon_model.h5')
 
 
 
