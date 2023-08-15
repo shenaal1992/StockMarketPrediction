@@ -1,13 +1,7 @@
 
 import streamlit as st
-st.set_option('deprecation.showfileUploaderEncoding', False)  # Disable a deprecated warning
-st.set_option('deprecation.showPyplotGlobalUse', False) 
-
-
 import matplotlib.pyplot as plt
 import numpy as np
-
-
 
 # Import the libraries
 import math
